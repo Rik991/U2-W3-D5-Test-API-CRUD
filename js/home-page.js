@@ -32,8 +32,8 @@ const getProduct = () => {
           <p class="card-text ">Prezzo: ${singleProd.price} €</p>
           </div>
           <div class="d-flex justify-content-around flex-wrap mt-auto">          
-          <button class="btn btn-warning my-1">Modifica</button>
-          <button class="btn btn-danger my-1">Elimina</button>
+          <button class="btn btn-outline-warning my-1">Modifica</button>
+          <button class="btn btn-outline-danger my-1">Elimina</button>
           </div>
          </div>`;
         newCol.appendChild(newCard);
@@ -41,12 +41,12 @@ const getProduct = () => {
         newCard.querySelector(".card-img-top").addEventListener("click", () => {
           window.location.href = `details.html?id=${singleProd._id}`;
         });
-        const updateBtn = newCard.querySelector(".btn-warning");
+        const updateBtn = newCard.querySelector(".btn-outline-warning");
         updateBtn.addEventListener("click", () => {
           const idUrl = `./back-office.html?id=${singleProd._id}`;
           window.location.href = idUrl;
         });
-        const deleteBtn = newCard.querySelector(".btn-danger");
+        const deleteBtn = newCard.querySelector(".btn-outline-danger");
         deleteBtn.addEventListener("click", () => {
           const areYouShure = confirm("Sei sicuro di voler eliminare il prdotto?");
           if (areYouShure) {
