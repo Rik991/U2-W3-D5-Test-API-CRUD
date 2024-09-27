@@ -21,18 +21,17 @@ const getProduct = () => {
         const myRow = document.getElementById("last-load");
         const newCol = document.createElement("div");
         const newCard = document.createElement("div");
-        newCol.classList.add("col-6", "col-md-4", "col-lg-3");
-        newCard.classList.add("card", "h-100", "w-100");
+        newCol.classList.add("col-6", "col-md-4", "col-xl-3");
+        newCard.classList.add("card", "h-100", "w-100", "border", "border-black", "shadow-lg");
         newCard.style.cursor = "pointer";
         newCard.innerHTML = `        
          <img src="${singleProd.imageUrl}" class="card-img-top img-fluid" alt="product-img" style="object-fit:cover; width:100%; height: 330px">
          <div class="card-body d-flex flex-column">
-          <h5 class="card-title">${singleProd.name}</h5>
-          <div>
-          <p class="card-text">${singleProd.description}</p>
-          <p class="card-text">Prezzo: ${singleProd.price} €</p>
+          <h6 class="card-title">${singleProd.name}</h6>
+          <div>          
+          <p class="card-text ">Prezzo: ${singleProd.price} €</p>
           </div>
-          <div class="d-flex justify-content-around flex-wrap">          
+          <div class="d-flex justify-content-around flex-wrap mt-auto">          
           <button class="btn btn-warning my-1">Modifica</button>
           <button class="btn btn-danger my-1">Elimina</button>
           </div>

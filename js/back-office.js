@@ -3,7 +3,7 @@ const myKey =
   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmY2NmIxNDc5YzQ1ZjAwMTU2OWI0YzkiLCJpYXQiOjE3Mjc0MjUzMDAsImV4cCI6MTcyODYzNDkwMH0.mISiOkqw_tswxCmgxiFQcCmCMuw1ky6Zt95fVt_5sY4";
 
 const backOfficeForm = document.querySelector("form");
-const resetBtn = document.querySelector(".btn-info");
+const resetBtn = document.querySelector(".btn-outline-dark");
 
 class Product {
   constructor(_name, _description, _brand, _imageUrl, _price) {
@@ -45,6 +45,8 @@ const loadProd = (id) => {
       document.getElementById("prodPrice").value = product.price;
       const otherBtn = document.querySelector(".btn-primary");
       otherBtn.innerText = "Aggiorna prodotto";
+      const titlePage = document.querySelector("h1");
+      titlePage.innerText = "Aggiorna informazioni prodotto";
     })
     .catch((err) => {
       console.log("Errore", err);

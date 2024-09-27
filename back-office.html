@@ -11,7 +11,11 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body
+    style="
+      background-image: url(./assets/img/8633267-mano-con-gesto-testo-rock-e-stelle-doodle-emblema-simbolo-isolato-su-sfondo-bianco-grunge-stampa-illustrazione-vettoriale.jpg);
+    "
+  >
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -42,40 +46,40 @@
     </header>
     <main>
       <div class="container-fluid">
-        <h1>Inserisci prodotto</h1>
+        <h1>Inserisci nuovo prodotto</h1>
         <h6 class="text-danger">I campi indicati con un * sono obbligatori</h6>
         <div class="row">
           <div class="col-6">
             <form>
               <div class="mb-3">
                 <label for="prodName" class="form-label">Product Name *</label>
-                <input type="text" class="form-control" id="prodName" />
+                <input type="text" class="form-control border border-black" id="prodName" />
                 <div class="form-text">Indica il nome del prodotto.</div>
               </div>
               <div class="mb-3">
                 <label for="prodDescription" class="form-label">Product Description *</label>
-                <input type="text" class="form-control" id="prodDescription" />
+                <input type="text" class="form-control border border-black" id="prodDescription" />
                 <div class="form-text">Breve descrizione del prodotto.</div>
               </div>
               <div class="mb-3">
                 <label for="prodBrand" class="form-label">Brand *</label>
-                <input type="text" class="form-control" id="prodBrand" />
+                <input type="text" class="form-control border border-black" id="prodBrand" />
                 <div class="form-text">Marca del Prodotto.</div>
               </div>
               <div class="mb-3">
                 <label for="prodPic" class="form-label">Product Picture *</label>
-                <input type="text" class="form-control" id="prodPic" placeholder="Allega l'URL della tua foto -> (https://...)" />
+                <input type="text" class="form-control border border-black" id="prodPic" placeholder="Allega l'URL della tua foto -> (https://...)" />
                 <div class="form-text">Carica la foto di copertina del prodotto.</div>
               </div>
               <div class="mb-3">
                 <label for="prodPrice" class="form-label">Product Price *</label>
-                <input type="number" class="form-control" id="prodPrice" placeholder="€" />
+                <input type="number" class="form-control border border-black" id="prodPrice" placeholder="€" />
                 <div class="form-text">Indica il prezzo del prodotto.</div>
               </div>
               <div class="d-flex justify-content-between">
                 <button type="submit" class="btn btn-primary">Carica prodotto</button>
-                <button type="button" class="btn btn-info">Resetta campi</button>
-                <a href="./home-page.html" class="btn btn-info">Torna alla Home</a>
+                <button type="button" class="btn btn-outline-dark">Resetta campi</button>
+                <a href="./home-page.html" class="btn btn-dark">Torna alla Home</a>
               </div>
             </form>
           </div>

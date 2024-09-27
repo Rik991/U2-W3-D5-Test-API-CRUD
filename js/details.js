@@ -23,11 +23,11 @@ const loadProd = (id) => {
       }
     })
     .then((product) => {
-      document.getElementById("prodName").innerText = product.name;
-      document.getElementById("prodDescription").innerText = product.description;
-      document.getElementById("prodBrand").innerText = product.brand;
+      document.getElementById("prodName").innerText = `${product.name}`;
+      document.getElementById("prodDescription").innerText = `Descrizione: ${product.description}`;
+      document.getElementById("prodBrand").innerText = `Brand: ${product.brand}`;
       document.getElementById("prodPic").src = product.imageUrl;
-      document.getElementById("prodPrice").innerText = product.price;
+      document.getElementById("prodPrice").innerText = `Prezzo: ${product.price} €`;
     })
     .catch((err) => {
       console.log("Errore", err);
